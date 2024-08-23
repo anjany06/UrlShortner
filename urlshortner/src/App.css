@@ -1,3 +1,14 @@
+.navbar{
+  width  : 100vw;
+  height : 10vh;
+  background-color: rgb(179, 0, 255);
+  color : white;
+}
+.navbar h2{
+  font-weight: 800;
+  font-family:sans-serif;
+  padding-left : 1rem;
+}
 .container{
   height : 80vh;
   display : flex;
@@ -5,13 +16,18 @@
   justify-content: center;
   align-items : center;
 }
-.inputContainer h1{
-  color : #fff;
+.inputContainer h1 {
+  color : white;
   font-family: sans-serif;
-  font-size : 3.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
-.inputContainer h1 span{
-  color : rgb(244, 187, 0);
+.inputContainer h3{
+  color : white;
+  font-size : 2rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin : 1.5rem 0;
 }
 .inputContainer div{
   display  :flex;
@@ -30,6 +46,10 @@
 .inputContainer input::placeholder{
   font-size  :0.9rem;
 }
+.inputContainer input:focus{
+  border : 3px solid rgb(179, 0, 255);
+  box-shadow: 0 0 10px rgb(0,0,0,0.7);
+}
 .inputContainer button{
   padding : 0 1rem;
   height : 3rem;
@@ -41,6 +61,9 @@
   color : white;
   background-color: rgb(179, 0, 255);
   border : none;
+}
+.inputContainer button:hover{
+  background-color:  rgba(179, 0, 255, 0.607);
 }
 /*background*/
 @keyframes move {
@@ -316,4 +339,12 @@
 .noData{
   color : #fff;
   font-size  : 1rem;
+}
+@media only screen and (max-width : 500px){
+  .inputContainer h1{
+    font-size : 2.3rem;
+  }
+  .inputContainer h3{
+    font-size: 1.7rem;
+  }
 }
