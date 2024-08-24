@@ -13,7 +13,7 @@ function LinkResult({ inputValue }) {
     try {
       setLoading(true);
       const response = await axios.post(
-        `http://tinyurl.com/api-create.php`,
+        `https://tinyurl.com/api-create.php`,
         `url=${inputValue}`,
         {
           headers: {
