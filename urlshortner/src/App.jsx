@@ -1,6 +1,6 @@
 import InputShortener from "./InputShortener";
 import Background from "./Background";
-import LinkResult from "./linkResult";
+import LinkResult from "./LinkResult";
 import Navbar from "./Navbar";
 
 import "./App.css";
